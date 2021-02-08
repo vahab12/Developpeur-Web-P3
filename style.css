@@ -1,0 +1,167 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+@media (max-width: 667px) {
+  .btn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0 70px 0;
+    background-color: rgba(243, 243, 243, 0.993);
+  }
+  .btn button {
+    width: 20rem;
+    height: 4.6rem;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border: 0.1rem solid #c2c2c2;
+    border-radius: 3rem;
+    box-shadow: 3px 3px 3px 3px #c2c2c2;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+  }
+  .btn button a {
+    text-decoration: none;
+    color: white;
+  }
+}
+@media (max-width: 667px) {
+  .logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.1rem solid white;
+    box-shadow: 10px 10px 10px #0e0d0d;
+    background-color: white;
+  }
+  .logo img {
+    width: 20rem;
+  }
+
+  .map {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #dadada;
+    height: 5rem;
+  }
+  .map span .fas {
+    padding-left: 6rem;
+    font-size: 1.6rem;
+  }
+  .map h2 {
+    padding-right: 9rem;
+    font-weight: bold;
+    font-size: 1.6em;
+    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+  }
+
+  .title h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    background-color: rgba(243, 243, 243, 0.993);
+  }
+
+  .info {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 2rem;
+    background-color: rgba(243, 243, 243, 0.993);
+  }
+  .info p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 667px) {
+  .titre {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    padding: 70px 0 30px 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,29 @@
+@mixin h2 {
+    font-family: $font-family;
+    font-size: 2rem;
+}
+
+@mixin titre {
+    font-family: $font-family;
+    font-size: 2rem;
+    padding: 70px 0 30px 20px;
+}
+
+@mixin p {
+    font-family: $font-family;
+    font-size: 1.5rem;
+}
+
+@mixin btn {
+    width: 20rem;
+    height: 4.6rem;
+    background: linear-gradient( $secondaire, $primaire, );
+    border: 0.1rem solid rgb(194, 194, 194);
+    border-radius: 3rem;
+    box-shadow: 3px 3px 3px 3px rgb(194, 194, 194);
+    @include p;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}

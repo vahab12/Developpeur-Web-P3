@@ -1,0 +1,12 @@
+@media (max-width: 667px) {
+    .btn {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 20px 0 70px 0;
+        background-color: rgba(243, 243, 243, 0.993);
+        button {
+            @include btn;
+        }
+    }
+}
