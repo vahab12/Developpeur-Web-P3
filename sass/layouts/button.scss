@@ -3,10 +3,12 @@
         display: flex;
         justify-content: center;
         text-align: center;
-        padding: 20px 0 70px 0;
+        padding: 30px 0 80px 0;
         background-color: rgba(243, 243, 243, 0.993);
         button {
             @include btn;
+            color: white;
+            font-size: 1.5rem;
         }
     }
 }

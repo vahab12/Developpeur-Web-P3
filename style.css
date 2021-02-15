@@ -81,17 +81,19 @@ th {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 20px 0 70px 0;
+    padding: 30px 0 80px 0;
     background-color: rgba(243, 243, 243, 0.993);
   }
   .btn button {
-    width: 20rem;
+    width: 21.1rem;
     height: 4.6rem;
     background: linear-gradient(#FF79DA, #9356DC);
     border: 0.1rem solid #c2c2c2;
     border-radius: 3rem;
-    box-shadow: 3px 3px 3px 3px #c2c2c2;
-    font-family: "Roboto", sans-serif;
+    box-shadow: 2px 2px 2px 2px #dddddd;
+    font-family: "Roboto", sans-serif, "Shrikhand", cursive;
+    font-size: 1.6rem;
+    color: white;
     font-size: 1.5rem;
   }
   .btn button a {
@@ -103,45 +105,56 @@ th {
   .logo {
     display: flex;
     justify-content: center;
-    padding-top: 2.5rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 0.1rem solid white;
-    box-shadow: 10px 10px 10px #0e0d0d;
-    background-color: white;
+    padding-top: 2.2rem;
+    padding-bottom: 1rem;
+    box-shadow: 0 0 4px 0 black;
   }
   .logo img {
-    width: 20rem;
+    width: 16rem;
+    box-shadow: 4px black;
   }
 
   .map {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dadada;
+    width: auto;
+    height: 5rem;
+  }
+  .map div {
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #dadada;
-    height: 5rem;
+    width: 525px;
   }
   .map span .fas {
-    padding-left: 6rem;
+    padding-left: 7rem;
     font-size: 1.6rem;
   }
   .map h2 {
-    padding-right: 9rem;
+    padding-right: 10rem;
     font-weight: bold;
     font-size: 1.6em;
-    font-family: "Roboto", sans-serif;
-    font-family: "Roboto", sans-serif;
-    font-size: 2rem;
+    font-family: "Roboto", sans-serif, "Shrikhand", cursive;
+    font-family: "Roboto", sans-serif, "Shrikhand", cursive;
+    font-size: 1.6rem;
   }
 
-  .title h2 {
+  .title {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 1rem 2rem;
-    font-family: "Roboto", sans-serif;
-    font-size: 2rem;
+    padding: 3rem 2rem 0.5rem;
     background-color: rgba(243, 243, 243, 0.993);
+    width: auto;
+  }
+  .title h2 {
+    width: 400px;
+    font-family: "Roboto", sans-serif, "Shrikhand", cursive;
+    font-size: 2.3rem;
+    font-weight: bold;
   }
 
   .info {
@@ -152,15 +165,322 @@ th {
     background-color: rgba(243, 243, 243, 0.993);
   }
   .info p {
-    font-family: "Roboto", sans-serif;
-    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif, "Shrikhand", cursive;
+    font-size: 1.6rem;
+    width: 550px;
   }
 }
 @media (max-width: 667px) {
-  .titre {
-    font-family: "Roboto", sans-serif;
+  .fonctionement {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+  }
+  .fonctionement .titre h2 {
+    font-family: "Roboto", sans-serif, "Shrikhand", cursive;
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding-top: 1.7rem;
+    padding-bottom: 2.3rem;
+  }
+
+  .fonc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid transparent;
+    box-shadow: 3px 3px 3px 3px #e9e9e9;
+    border-radius: 2rem;
+    background-color: rgba(243, 243, 243, 0.993);
+    height: 6.6rem;
+  }
+  .fonc p {
+    font-family: "Roboto", sans-serif, "Shrikhand", cursive;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .fonc :nth-of-type(3) {
+    padding-left: 2em;
+  }
+
+  #fonc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid transparent;
+    box-shadow: 3px 3px 3px 3px #e9e9e9;
+    border-radius: 2rem;
+    background-color: #F0F1FC;
+    height: 6.6rem;
+  }
+  #fonc p {
+    font-family: "Roboto", sans-serif, "Shrikhand", cursive;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  #fonc :nth-of-type(3) {
+    padding-left: 2em;
+  }
+  #fonc .number p {
+    color: white;
+    font-weight: normal;
+    font-size: 1.3rem;
+  }
+
+  .fonction-content {
+    padding-bottom: 2rem;
+  }
+
+  .mobile {
+    padding-left: 4em;
+  }
+  .mobile i {
     font-size: 2rem;
-    padding: 70px 0 30px 20px;
+    color: #858585;
+  }
+
+  .burger {
+    padding-left: 3em;
+  }
+  .burger i {
+    font-size: 1.7rem;
+    color: #858585;
+  }
+
+  .degustation {
+    padding-left: 3em;
+  }
+  .degustation i {
+    font-size: 2rem;
+    color: #9356DC;
+  }
+
+  .number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 30px;
+    background-color: #9356DC;
+    border-radius: 50%;
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  .number p {
+    color: white;
+    font-weight: normal;
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 667px) {
+  /*###############################
+  //////////HEADER/////////////////
+  ################################*/
+  .header {
+    height: auto;
+    width: auto;
+  }
+
+  .bg_header {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+  }
+  .bg_header i {
+    font-size: 1.8rem;
+  }
+  .bg_header h1 {
+    font-family: "Shrikhand", cursive;
+    font-size: 2.3rem;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+
+  .bg_slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /*###############################
+  //////////MAIN/////////////////
+  ################################*/
+  main {
+    padding: 0;
+    height: auto;
+    width: auto;
+    background-color: rgba(243, 243, 243, 0.993);
+  }
+
+  .menu_container {
+    max-width: 1280px;
+    height: auto;
+    padding: 2rem;
+  }
+
+  h .btn_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /*###############################
+  //////////FOOTER/////////////////
+  ################################*/
+  footer {
+    height: auto;
+    width: auto;
+  }
+}
+@media (max-width: 667px) {
+  .container {
+    background-color: rgba(243, 243, 243, 0.993);
+    padding: 3rem;
+  }
+  .container .titre h2 {
+    font-family: "Roboto", sans-serif, "Shrikhand", cursive;
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .container .resto {
+    padding: 1rem 0 0.7rem;
+    position: relative;
+  }
+  .container .resto:nth-of-type(4) {
+    padding-bottom: 4em;
+  }
+  .container .img-txt {
+    background-color: white;
+    border-radius: 1.3rem;
+    box-shadow: 2px 2px 5px 2px #d1d1d1;
+  }
+  .container .bg-image {
+    height: 16rem;
+    width: auto;
+    border-top-left-radius: 1.3rem;
+    border-top-right-radius: 1.3rem;
+  }
+  .container .bg-image img {
+    border-top-left-radius: 1.3rem;
+    border-top-right-radius: 1.3rem;
+  }
+  .container .bg-image img {
+    width: 100%;
+    height: 100%;
+  }
+  .container .new:nth-of-type(3) {
+    display: none;
+  }
+  .container .new {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 1rem;
+    top: 2.5rem;
+    background-color: #99E2D0;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 0.2rem;
+  }
+  .container .new p {
+    font-family: "Roboto", sans-serif, "Shrikhand", cursive;
+    font-size: 1.6rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #37af7d;
+  }
+  .container .txt {
+    height: 6.8rem;
+    position: relative;
+  }
+  .container .txt .fa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .container .txt .fa h3 {
+    padding: 1.6rem 0 0 1.5rem;
+    font-family: "Roboto", sans-serif, "Shrikhand", cursive;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  .container .txt .fa .heart {
+    padding: 1.6rem 2.3rem 0 0;
+    color: #bdbdbd;
+  }
+  .container .txt .fa .heart .far {
+    color: black;
+  }
+  .container .txt .fa .heart .far:hover {
+    color: transparent;
+  }
+  .container .txt .fa .heart .fas {
+    position: absolute;
+    top: 1.54rem;
+    right: 2.25rem;
+    color: transparent;
+    font-size: 2.1rem;
+  }
+  .container .txt .fa .heart .fas:hover {
+    color: #c156dc;
+  }
+  .container .txt p {
+    padding-left: 1.5rem;
+    padding-bottom: 2rem;
+    font-family: "Roboto", sans-serif, "Shrikhand", cursive;
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 667px) {
+  footer {
+    background-color: rgba(0, 0, 0, 0.767);
+    padding: 3rem;
+  }
+  footer .logo-footer h2 {
+    padding: 0;
+    color: white;
+    font-family: "Shrikhand", cursive;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-bottom: 1em;
+  }
+  footer .restaurant,
+footer .mention,
+footer .partenir,
+footer .contact {
+    padding-bottom: 0.8rem;
+    display: flex;
+    flex-direction: row;
+  }
+  footer p {
+    font-family: "Roboto", sans-serif, "Shrikhand", cursive;
+    font-size: 1.6rem;
+  }
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
+  footer .restaurant i {
+    padding-right: 0.9em;
+    font-size: 1.2rem;
+    color: white;
+  }
+  footer .partenir i {
+    padding-right: 0.6em;
+    color: white;
+  }
+  footer .contact {
+    padding-bottom: 2.5rem;
   }
 }
 

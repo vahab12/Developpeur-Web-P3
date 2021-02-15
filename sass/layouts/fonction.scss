@@ -1,0 +1,95 @@
+@media (max-width:667px) {
+    .fonctionement {
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: white;
+        .titre h2 {
+            @include titre;
+            padding-top: 1.7rem;
+            padding-bottom: 2.3rem;
+        }
+    }
+    .fonc {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 1px solid transparent;
+        box-shadow: 3px 3px 3px 3px rgb(233, 233, 233);
+        border-radius: 2rem;
+        background-color: $background-color;
+        height: 6.6rem;
+        p {
+            @include p;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+         :nth-of-type(3) {
+            padding-left: 2em;
+        }
+    }
+    #fonc {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 1px solid transparent;
+        box-shadow: 3px 3px 3px 3px rgb(233, 233, 233);
+        border-radius: 2rem;
+        background-color: #F0F1FC;
+        height: 6.6rem;
+        p {
+            @include p;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+         :nth-of-type(3) {
+            padding-left: 2em;
+        }
+        .number p {
+            color: white;
+            font-weight: normal;
+            font-size: 1.3rem;
+        }
+    }
+    .fonction-content {
+        padding-bottom: 2rem;
+    }
+    .mobile {
+        padding-left: 4em;
+        i {
+            font-size: 2rem;
+            color: rgb(133, 133, 133);
+        }
+    }
+    .burger {
+        padding-left: 3em;
+        i {
+            font-size: 1.7rem;
+            color: rgb(133, 133, 133);
+        }
+    }
+    .degustation {
+        padding-left: 3em;
+        i {
+            font-size: 2rem;
+            color: $primaire;
+        }
+    }
+    .number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 30px;
+        background-color: $primaire;
+        border-radius: 50%;
+        width: 2.2rem;
+        height: 2.2rem;
+        p {
+            color: white;
+            font-weight: normal;
+            font-size: 1.3rem;
+        }
+    }
+}

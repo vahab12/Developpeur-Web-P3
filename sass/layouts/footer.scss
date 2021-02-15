@@ -1,0 +1,39 @@
+@media (max-width:667px) {
+    footer {
+        background-color: rgba(0, 0, 0, 0.767);
+        padding: 3rem;
+        .logo-footer h2 {
+            padding: 0;
+            color: white;
+            @include menu-title;
+            padding-bottom: 1em;
+        }
+        .restaurant,
+        .mention,
+        .partenir,
+        .contact {
+            padding-bottom: .8rem;
+            display: flex;
+            flex-direction: row;
+        }
+        p {
+            @include p;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        .restaurant i {
+            padding-right: .9em;
+            font-size: 1.2rem;
+            color: white;
+        }
+        .partenir i {
+            padding-right: .6em;
+            color: white;
+        }
+        .contact {
+            padding-bottom: 2.5rem;
+        }
+    }
+}

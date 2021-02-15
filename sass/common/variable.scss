@@ -1,7 +1,9 @@
 $primaire:#9356DC;
 $secondaire:#FF79DA;
 $tertiaire:#99E2D0;
+$background: linear-gradient( $secondaire, $primaire, );
+$background-color: rgba(243, 243, 243, 0.993);
 $font-family: 'Roboto',
-sans-serif;
-$menu-title: 'Shrikhand',
+sans-serif,
+'Shrikhand',
 cursive;
