@@ -33,6 +33,15 @@
     font-size: 1.6rem;
 }
 
+@mixin btn-heart {
+    transition: all 1s ease-out;
+    font-weight: bold;
+    background: linear-gradient($primaire, $secondaire);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 @mixin btn {
     width: 21.1rem;
     height: 4.6rem;

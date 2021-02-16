@@ -20,6 +20,9 @@
         border-radius: 2rem;
         background-color: $background-color;
         height: 6.6rem;
+        &:hover {
+            background-color: #F0F1FC;
+        }
         p {
             @include p;
             font-weight: bold;
@@ -27,29 +30,6 @@
         }
          :nth-of-type(3) {
             padding-left: 2em;
-        }
-    }
-    #fonc {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        border: 1px solid transparent;
-        box-shadow: 3px 3px 3px 3px rgb(233, 233, 233);
-        border-radius: 2rem;
-        background-color: #F0F1FC;
-        height: 6.6rem;
-        p {
-            @include p;
-            font-weight: bold;
-            font-size: 1.5rem;
-        }
-         :nth-of-type(3) {
-            padding-left: 2em;
-        }
-        .number p {
-            color: white;
-            font-weight: normal;
-            font-size: 1.3rem;
         }
     }
     .fonction-content {
@@ -72,7 +52,7 @@
     .degustation {
         padding-left: 3em;
         i {
-            font-size: 2rem;
+            font-size: 1.6rem;
             color: $primaire;
         }
     }

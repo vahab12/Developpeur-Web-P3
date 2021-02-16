@@ -1,57 +1,229 @@
-@media (max-width:667px) {
-    /*###############################
+/*###############################
+    //////////COMMUN/////////////////
+    ################################*/
+
+.header {
+    height: auto;
+    width: auto;
+}
+
+main {
+    height: auto;
+    width: auto;
+    background-color: $background-color;
+}
+
+footer {
+    height: auto;
+    width: auto;
+}
+
+
+/*###############################
     //////////HEADER/////////////////
     ################################*/
-    .header {
-        height: auto;
-        width: auto;
+
+.bg_header {
+    position: relative;
+    padding: 1rem 2rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: black;
+        position: absolute;
+        top: 1.8rem;
+        left: 2rem
     }
-    .bg_header {
-        padding: 2rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 75%;
-        i {
-            font-size: 1.8rem;
-        }
-        h1 {
-            @include h1;
-            font-size: 3rem;
-        }
-    }
-    .bg_slider {
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
-    /*###############################
-    //////////MAIN/////////////////
-    ################################*/
-    main {
-        padding: 0;
-        height: auto;
-        width: auto;
-        background-color: $background-color;
-    }
-    .menu_container {
-        max-width: 1280px;
-        height: auto;
-        padding: 2rem;
-    }
-    h .btn_header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    /*###############################
-    //////////FOOTER/////////////////
-    ################################*/
-    footer {
-        height: auto;
-        width: auto;
+    h1 {
+        @include h1;
+        font-size: 2.5rem;
+        text-align: center;
     }
 }
+
+.bg_slider {
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+/*###############################
+    //////////MAIN/////////////////
+    ################################*/
+
+.menu_container {
+    max-width: 1280px;
+    height: auto;
+    padding: 2rem;
+    position: relative;
+    margin-top: -5.3rem;
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+}
+
+.btn_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    i {
+        padding-top: 0.8rem;
+        font-size: 2.2rem;
+        &:hover {
+            @include btn-heart;
+            font-size: 2.4rem;
+        }
+    }
+    h2 {
+        padding-top: 0.8rem;
+        margin-left: -2rem;
+        @include h1;
+        font-size: 2.3rem;
+    }
+}
+
+
+/*#####ENTREES#####*/
+
+.entrees_title,
+.plats_title,
+.desserts_title {
+    padding-left: .3rem;
+    padding-top: 2rem;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 0.5rem;
+    font-weight: normal;
+    font-size: 1.5rem;
+    &::after {
+        content: "";
+        width: 3rem;
+        height: 0.25rem;
+        background-color: $tertiaire;
+        position: absolute;
+        left: .3rem;
+        bottom: 0;
+    }
+}
+
+.entrees_1,
+.plats_1,
+.desserts_1 {
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    border-radius: 1rem;
+    margin: 1.5rem 0;
+    box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
+    overflow: hidden;
+    cursor: pointer;
+    animation: entrees .6s;
+    animation-timing-function: cubic-bezier(.5, 1.58, .34, .82);
+    animation-fill-mode: both;
+    transform: scale(0);
+    max-width: 100%;
+    .entrees_bg_header,
+    .plats_bg_header,
+    .desserts_bg_header {
+        width: 75%;
+        &_title {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            flex: 1;
+        }
+    }
+    .entrees_subtitle,
+    .plats_subtitle,
+    .desserts_subtitle {
+        font-family: $font-family;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .entrees_txt,
+    .plats_txt,
+    .desserts_txt {
+        font-family: $font-family;
+        font-size: 1.2rem;
+        padding-top: .5rem;
+    }
+    .entrees_price,
+    .plats_price,
+    .desserts_price {
+        font-family: $font-family;
+        font-size: 1.1rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-left: 6rem;
+    }
+    .entrees_icon,
+    .plats_icon,
+    .desserts_icon {
+        background-color: #99e2d0;
+        margin: -1rem -5rem -1rem 1rem;
+        width: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: .5s;
+        &:hover {
+            margin-right: -1rem;
+        }
+    }
+    .entrees_bg_icon,
+    .plats_bg_icon,
+    .desserts_bg_icon {
+        height: 1.6rem;
+        width: 1.6rem;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        transform: rotate( 180deg);
+        transition-duration: .5s;
+        .fas {
+            color: $tertiaire;
+        }
+        &:hover {
+            transform: scale(0.5) translate(-100%, -100%);
+        }
+    }
+}
+
+@for $i from 0 to 9 {
+    .delay-#{$i} {
+        animation-delay: #{$i/10}s;
+    }
+}
+
+
+/*#####Button#####*/
+
+.menu_container .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem 0 3rem 0;
+    button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 17rem;
+        height: 4.5rem;
+    }
+}
+
+
+/*###############################
+    //////////FOOTER/////////////////
+    ################################*/
