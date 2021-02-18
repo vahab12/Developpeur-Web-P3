@@ -1,4 +1,4 @@
-@media (max-width: 667px) {
+@media (min-width: 324px) {
     .logo {
         display: flex;
         justify-content: center;
@@ -36,6 +36,30 @@
             @include p;
         }
     }
+    .title {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 3rem 2rem .5rem;
+        background-color: $background-color;
+        width: auto;
+        h2 {
+            @include h2;
+        }
+    }
+    .info {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem 2rem;
+        background-color: $background-color;
+        p {
+            @include p;
+        }
+    }
+}
+
+@media (max-width:667px) {
     .title {
         display: flex;
         justify-content: center;

@@ -1,20 +1,44 @@
-@media (max-width: 667px) {
+//Commun
+body {
+    max-width: auto;
+}
+
+//mobile
+@media (min-width:667px) {
+    .resto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 28rem;
+    }
+    .resto {
+        padding-bottom: 4em;
+    }
+}
+
+//desktop
+@media (min-width: 324px) {
     .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
         width: auto;
         height: auto;
         background-color: $background-color;
         padding: 3rem;
-        .titre h2 {
-            @include titre;
-            padding-top: 2rem;
-            padding-bottom: 1rem;
+        .titre {
+            width: 100%;
+            h2 {
+                @include titre;
+                padding-top: 2rem;
+                padding-bottom: 1rem;
+            }
         }
         .resto {
             padding: 1rem 0 .7rem;
             position: relative;
-        }
-        .resto:nth-of-type(4) {
-            padding-bottom: 4em;
         }
         .img-txt {
             background-color: white;
@@ -81,5 +105,18 @@
             padding-bottom: 2rem;
             @include p;
         }
+    }
+}
+
+@media (min-width:667px) {
+    .resto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 28rem;
+    }
+    .resto {
+        padding-bottom: 4em;
     }
 }

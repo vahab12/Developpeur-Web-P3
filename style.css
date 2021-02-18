@@ -76,7 +76,7 @@ th {
   padding: 0;
 }
 
-@media (max-width: 667px) {
+@media (min-width: 324px) {
   .btn {
     display: flex;
     justify-content: center;
@@ -101,7 +101,7 @@ th {
     color: white;
   }
 }
-@media (max-width: 667px) {
+@media (min-width: 324px) {
   .logo {
     display: flex;
     justify-content: center;
@@ -151,6 +151,33 @@ th {
     width: auto;
   }
   .title h2 {
+    font-family: "Roboto", sans-serif, "Shrikhand", cursive;
+    font-size: 2.3rem;
+    font-weight: bold;
+  }
+
+  .info {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 2rem;
+    background-color: rgba(243, 243, 243, 0.993);
+  }
+  .info p {
+    font-family: "Roboto", sans-serif, "Shrikhand", cursive;
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 667px) {
+  .title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 2rem 0.5rem;
+    background-color: rgba(243, 243, 243, 0.993);
+    width: auto;
+  }
+  .title h2 {
     width: 400px;
     font-family: "Roboto", sans-serif, "Shrikhand", cursive;
     font-size: 2.3rem;
@@ -170,13 +197,17 @@ th {
     width: 550px;
   }
 }
-@media (max-width: 667px) {
+@media (min-width: 324px) {
   .fonctionement {
     padding: 3rem;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     background-color: white;
+  }
+  .fonctionement .titre {
+    width: 100%;
   }
   .fonctionement .titre h2 {
     font-family: "Roboto", sans-serif, "Shrikhand", cursive;
@@ -190,11 +221,13 @@ th {
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
     border: 1px solid transparent;
     box-shadow: 3px 3px 3px 3px #e9e9e9;
     border-radius: 2rem;
     background-color: rgba(243, 243, 243, 0.993);
     height: 6.6rem;
+    width: 32rem;
   }
   .fonc:hover {
     background-color: #F0F1FC;
@@ -242,7 +275,7 @@ th {
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 30px;
+    left: -18px;
     background-color: #9356DC;
     border-radius: 50%;
     width: 2.2rem;
@@ -252,6 +285,11 @@ th {
     color: white;
     font-weight: normal;
     font-size: 1.3rem;
+  }
+}
+@media (min-width: 667px) {
+  .fonctionement .fonc {
+    width: 28rem;
   }
 }
 /*###############################
@@ -299,6 +337,10 @@ footer {
   text-align: center;
 }
 
+.bg_slider {
+  width: auto;
+  height: 35rem;
+}
 .bg_slider img {
   width: 100%;
   height: 100%;
@@ -309,7 +351,6 @@ footer {
     //////////MAIN/////////////////
     ################################*/
 .menu_container {
-  max-width: 1280px;
   height: auto;
   padding: 2rem;
   position: relative;
@@ -422,7 +463,7 @@ footer {
 .desserts_1 .plats_subtitle,
 .desserts_1 .desserts_subtitle {
   font-family: "Roboto", sans-serif, "Shrikhand", cursive;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
 }
 .entrees_1 .entrees_txt,
@@ -435,7 +476,7 @@ footer {
 .desserts_1 .plats_txt,
 .desserts_1 .desserts_txt {
   font-family: "Roboto", sans-serif, "Shrikhand", cursive;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding-top: 0.5rem;
 }
 .entrees_1 .entrees_price,
@@ -577,15 +618,51 @@ footer {
   height: 4.5rem;
 }
 
+@media (min-width: 667px) {
+  .menu_container .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .btn_header {
+    padding-bottom: 2rem;
+  }
+}
 /*###############################
     //////////FOOTER/////////////////
     ################################*/
-@media (max-width: 667px) {
+body {
+  max-width: auto;
+}
+
+@media (min-width: 667px) {
+  .resto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 28rem;
+  }
+
+  .resto {
+    padding-bottom: 4em;
+  }
+}
+@media (min-width: 324px) {
   .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: auto;
     height: auto;
     background-color: rgba(243, 243, 243, 0.993);
     padding: 3rem;
+  }
+  .container .titre {
+    width: 100%;
   }
   .container .titre h2 {
     font-family: "Roboto", sans-serif, "Shrikhand", cursive;
@@ -597,9 +674,6 @@ footer {
   .container .resto {
     padding: 1rem 0 0.7rem;
     position: relative;
-  }
-  .container .resto:nth-of-type(4) {
-    padding-bottom: 4em;
   }
   .container .img-txt {
     background-color: white;
@@ -676,6 +750,19 @@ footer {
     font-size: 1.6rem;
   }
 }
+@media (min-width: 667px) {
+  .resto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 28rem;
+  }
+
+  .resto {
+    padding-bottom: 4em;
+  }
+}
 @keyframes entrees {
   0% {
     transform: scale(0);
@@ -710,7 +797,7 @@ footer {
     // }
 }
 */
-@media (max-width: 667px) {
+@media (min-width: 324px) {
   footer {
     background-color: rgba(0, 0, 0, 0.767);
     padding: 3rem;

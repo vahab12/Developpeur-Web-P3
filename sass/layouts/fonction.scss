@@ -1,25 +1,31 @@
-@media (max-width:667px) {
+@media (min-width:324px) {
     .fonctionement {
         padding: 3rem;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
         background-color: white;
-        .titre h2 {
-            @include titre;
-            padding-top: 1.7rem;
-            padding-bottom: 2.3rem;
+        .titre {
+            width: 100%;
+            h2 {
+                @include titre;
+                padding-top: 1.7rem;
+                padding-bottom: 2.3rem;
+            }
         }
     }
     .fonc {
         display: flex;
         flex-direction: row;
         align-items: center;
+        position: relative;
         border: 1px solid transparent;
         box-shadow: 3px 3px 3px 3px rgb(233, 233, 233);
         border-radius: 2rem;
         background-color: $background-color;
         height: 6.6rem;
+        width: 32rem;
         &:hover {
             background-color: #F0F1FC;
         }
@@ -61,7 +67,7 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        left: 30px;
+        left: -18px;
         background-color: $primaire;
         border-radius: 50%;
         width: 2.2rem;
@@ -71,5 +77,11 @@
             font-weight: normal;
             font-size: 1.3rem;
         }
+    }
+}
+
+@media (min-width:667px) {
+    .fonctionement .fonc {
+        width: 28rem;
     }
 }
