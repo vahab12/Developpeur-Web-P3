@@ -133,12 +133,6 @@ footer {
     .plats_bg_header,
     .desserts_bg_header {
         width: 75%;
-        &_title {
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            flex: 1;
-        }
     }
     .entrees_subtitle,
     .plats_subtitle,
@@ -146,6 +140,9 @@ footer {
         font-family: $font-family;
         font-size: 1.3rem;
         font-weight: bold;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     .entrees_txt,
     .plats_txt,
@@ -153,6 +150,9 @@ footer {
         font-family: $font-family;
         font-size: 1.1rem;
         padding-top: .5rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     .entrees_price,
     .plats_price,
@@ -163,20 +163,31 @@ footer {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
-        padding-left: 6rem;
+        padding-left: 5rem;
     }
     .entrees_icon,
     .plats_icon,
     .desserts_icon {
         background-color: #99e2d0;
-        margin: -1rem -5rem -1rem 1rem;
+        margin: -1rem -5rem -1rem 2rem;
         width: 4rem;
         display: flex;
         align-items: center;
         justify-content: center;
         transition-duration: .5s;
-        &:hover {
-            margin-right: -1rem;
+    }
+    &:hover {
+        .entrees_icon,
+        .plats_icon,
+        .desserts_icon {
+            margin-left: -.1rem;
+        }
+    }
+    &:hover {
+        .entrees_price,
+        .plats_price,
+        .desserts_price {
+            margin-left: -2.8rem;
         }
     }
     .entrees_bg_icon,
@@ -194,15 +205,13 @@ footer {
         .fas {
             color: $tertiaire;
         }
-        &:hover {
-            transform: scale(0.5) translate(-100%, -100%);
-        }
     }
-}
-
-@for $i from 0 to 9 {
-    .delay-#{$i} {
-        animation-delay: #{$i/10}s;
+    &:hover {
+        .entrees_bg_icon,
+        .plats_bg_icon,
+        .desserts_bg_icon {
+            transform: rotate( -5deg);
+        }
     }
 }
 
@@ -234,6 +243,7 @@ footer {
     }
     .btn_header {
         padding-bottom: 2rem;
+        position: sticky;
     }
 }
 

@@ -439,20 +439,6 @@ footer {
 .desserts_1 .desserts_bg_header {
   width: 75%;
 }
-.entrees_1 .entrees_bg_header_title,
-.entrees_1 .plats_bg_header_title,
-.entrees_1 .desserts_bg_header_title,
-.plats_1 .entrees_bg_header_title,
-.plats_1 .plats_bg_header_title,
-.plats_1 .desserts_bg_header_title,
-.desserts_1 .entrees_bg_header_title,
-.desserts_1 .plats_bg_header_title,
-.desserts_1 .desserts_bg_header_title {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  flex: 1;
-}
 .entrees_1 .entrees_subtitle,
 .entrees_1 .plats_subtitle,
 .entrees_1 .desserts_subtitle,
@@ -465,6 +451,9 @@ footer {
   font-family: "Roboto", sans-serif, "Shrikhand", cursive;
   font-size: 1.3rem;
   font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .entrees_1 .entrees_txt,
 .entrees_1 .plats_txt,
@@ -478,6 +467,9 @@ footer {
   font-family: "Roboto", sans-serif, "Shrikhand", cursive;
   font-size: 1.1rem;
   padding-top: 0.5rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .entrees_1 .entrees_price,
 .entrees_1 .plats_price,
@@ -494,7 +486,7 @@ footer {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding-left: 6rem;
+  padding-left: 5rem;
 }
 .entrees_1 .entrees_icon,
 .entrees_1 .plats_icon,
@@ -506,23 +498,34 @@ footer {
 .desserts_1 .plats_icon,
 .desserts_1 .desserts_icon {
   background-color: #99e2d0;
-  margin: -1rem -5rem -1rem 1rem;
+  margin: -1rem -5rem -1rem 2rem;
   width: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
   transition-duration: 0.5s;
 }
-.entrees_1 .entrees_icon:hover,
-.entrees_1 .plats_icon:hover,
-.entrees_1 .desserts_icon:hover,
-.plats_1 .entrees_icon:hover,
-.plats_1 .plats_icon:hover,
-.plats_1 .desserts_icon:hover,
-.desserts_1 .entrees_icon:hover,
-.desserts_1 .plats_icon:hover,
-.desserts_1 .desserts_icon:hover {
-  margin-right: -1rem;
+.entrees_1:hover .entrees_icon,
+.entrees_1:hover .plats_icon,
+.entrees_1:hover .desserts_icon,
+.plats_1:hover .entrees_icon,
+.plats_1:hover .plats_icon,
+.plats_1:hover .desserts_icon,
+.desserts_1:hover .entrees_icon,
+.desserts_1:hover .plats_icon,
+.desserts_1:hover .desserts_icon {
+  margin-left: -0.1rem;
+}
+.entrees_1:hover .entrees_price,
+.entrees_1:hover .plats_price,
+.entrees_1:hover .desserts_price,
+.plats_1:hover .entrees_price,
+.plats_1:hover .plats_price,
+.plats_1:hover .desserts_price,
+.desserts_1:hover .entrees_price,
+.desserts_1:hover .plats_price,
+.desserts_1:hover .desserts_price {
+  margin-left: -2.8rem;
 }
 .entrees_1 .entrees_bg_icon,
 .entrees_1 .plats_bg_icon,
@@ -554,52 +557,16 @@ footer {
 .desserts_1 .desserts_bg_icon .fas {
   color: #99E2D0;
 }
-.entrees_1 .entrees_bg_icon:hover,
-.entrees_1 .plats_bg_icon:hover,
-.entrees_1 .desserts_bg_icon:hover,
-.plats_1 .entrees_bg_icon:hover,
-.plats_1 .plats_bg_icon:hover,
-.plats_1 .desserts_bg_icon:hover,
-.desserts_1 .entrees_bg_icon:hover,
-.desserts_1 .plats_bg_icon:hover,
-.desserts_1 .desserts_bg_icon:hover {
-  transform: scale(0.5) translate(-100%, -100%);
-}
-
-.delay-0 {
-  animation-delay: 0s;
-}
-
-.delay-1 {
-  animation-delay: 0.1s;
-}
-
-.delay-2 {
-  animation-delay: 0.2s;
-}
-
-.delay-3 {
-  animation-delay: 0.3s;
-}
-
-.delay-4 {
-  animation-delay: 0.4s;
-}
-
-.delay-5 {
-  animation-delay: 0.5s;
-}
-
-.delay-6 {
-  animation-delay: 0.6s;
-}
-
-.delay-7 {
-  animation-delay: 0.7s;
-}
-
-.delay-8 {
-  animation-delay: 0.8s;
+.entrees_1:hover .entrees_bg_icon,
+.entrees_1:hover .plats_bg_icon,
+.entrees_1:hover .desserts_bg_icon,
+.plats_1:hover .entrees_bg_icon,
+.plats_1:hover .plats_bg_icon,
+.plats_1:hover .desserts_bg_icon,
+.desserts_1:hover .entrees_bg_icon,
+.desserts_1:hover .plats_bg_icon,
+.desserts_1:hover .desserts_bg_icon {
+  transform: rotate(-5deg);
 }
 
 /*#####Button#####*/
@@ -628,6 +595,7 @@ footer {
 
   .btn_header {
     padding-bottom: 2rem;
+    position: sticky;
   }
 }
 /*###############################
