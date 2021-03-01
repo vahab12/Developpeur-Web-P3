@@ -15,6 +15,9 @@
             }
         }
     }
+    .asid {
+        width: 100%;
+    }
     .fonc {
         display: flex;
         flex-direction: row;
@@ -25,7 +28,7 @@
         border-radius: 2rem;
         background-color: $background-color;
         height: 6.6rem;
-        width: 32rem;
+        width: 100%;
         &:hover {
             background-color: #F0F1FC;
         }
@@ -80,8 +83,23 @@
     }
 }
 
-@media (min-width:667px) {
+@media (max-width:667px) {
+    .fonction-content {
+        width: 100%;
+    }
+}
+
+@media (min-width: 667px) {
     .fonctionement .fonc {
         width: 28rem;
+    }
+    .fonction-content {
+        width: 45%;
+    }
+}
+
+@media (min-width:1024px) {
+    .fonction-content {
+        width: 30%;
     }
 }

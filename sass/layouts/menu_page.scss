@@ -117,8 +117,8 @@ footer {
 .plats_1,
 .desserts_1 {
     background-color: #fff;
-    padding: 1rem;
     display: flex;
+    flex-direction: row;
     border-radius: 1rem;
     margin: 1.5rem 0;
     box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
@@ -128,11 +128,12 @@ footer {
     animation-timing-function: cubic-bezier(.5, 1.58, .34, .82);
     animation-fill-mode: both;
     transform: scale(0);
-    max-width: 100%;
+    width: 100%;
     .entrees_bg_header,
     .plats_bg_header,
     .desserts_bg_header {
-        width: 75%;
+        width: 100%;
+        padding: 15px;
     }
     .entrees_subtitle,
     .plats_subtitle,
@@ -149,7 +150,6 @@ footer {
     .desserts_txt {
         font-family: $font-family;
         font-size: 1.1rem;
-        padding-top: .5rem;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -163,31 +163,37 @@ footer {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
-        padding-left: 5rem;
+        padding: 15px;
+    }
+    #icon {
+        position: relative;
     }
     .entrees_icon,
     .plats_icon,
     .desserts_icon {
-        background-color: #99e2d0;
-        margin: -1rem -5rem -1rem 2rem;
-        width: 4rem;
         display: flex;
         align-items: center;
         justify-content: center;
+        position: absolute;
+        right: -100px;
+        height: 100%;
+        background-color: #99e2d0;
+        width: 100px;
         transition-duration: .5s;
     }
     &:hover {
         .entrees_icon,
         .plats_icon,
         .desserts_icon {
-            margin-left: -.1rem;
+            right: 0;
         }
-    }
-    &:hover {
         .entrees_price,
         .plats_price,
         .desserts_price {
-            margin-left: -2.8rem;
+            margin-right: 88px;
+        }
+        .desserts_bg_header {
+            width: 65%;
         }
     }
     .entrees_bg_icon,

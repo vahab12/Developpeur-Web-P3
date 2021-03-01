@@ -217,6 +217,10 @@ th {
     padding-bottom: 2.3rem;
   }
 
+  .asid {
+    width: 100%;
+  }
+
   .fonc {
     display: flex;
     flex-direction: row;
@@ -227,7 +231,7 @@ th {
     border-radius: 2rem;
     background-color: rgba(243, 243, 243, 0.993);
     height: 6.6rem;
-    width: 32rem;
+    width: 100%;
   }
   .fonc:hover {
     background-color: #F0F1FC;
@@ -287,9 +291,23 @@ th {
     font-size: 1.3rem;
   }
 }
+@media (max-width: 667px) {
+  .fonction-content {
+    width: 100%;
+  }
+}
 @media (min-width: 667px) {
   .fonctionement .fonc {
     width: 28rem;
+  }
+
+  .fonction-content {
+    width: 45%;
+  }
+}
+@media (min-width: 1024px) {
+  .fonction-content {
+    width: 30%;
   }
 }
 /*###############################
@@ -415,8 +433,8 @@ footer {
 .plats_1,
 .desserts_1 {
   background-color: #fff;
-  padding: 1rem;
   display: flex;
+  flex-direction: row;
   border-radius: 1rem;
   margin: 1.5rem 0;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
@@ -426,7 +444,7 @@ footer {
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
   animation-fill-mode: both;
   transform: scale(0);
-  max-width: 100%;
+  width: 100%;
 }
 .entrees_1 .entrees_bg_header,
 .entrees_1 .plats_bg_header,
@@ -437,7 +455,8 @@ footer {
 .desserts_1 .entrees_bg_header,
 .desserts_1 .plats_bg_header,
 .desserts_1 .desserts_bg_header {
-  width: 75%;
+  width: 100%;
+  padding: 15px;
 }
 .entrees_1 .entrees_subtitle,
 .entrees_1 .plats_subtitle,
@@ -466,7 +485,6 @@ footer {
 .desserts_1 .desserts_txt {
   font-family: "Roboto", sans-serif, "Shrikhand", cursive;
   font-size: 1.1rem;
-  padding-top: 0.5rem;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -486,7 +504,12 @@ footer {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding-left: 5rem;
+  padding: 15px;
+}
+.entrees_1 #icon,
+.plats_1 #icon,
+.desserts_1 #icon {
+  position: relative;
 }
 .entrees_1 .entrees_icon,
 .entrees_1 .plats_icon,
@@ -497,12 +520,14 @@ footer {
 .desserts_1 .entrees_icon,
 .desserts_1 .plats_icon,
 .desserts_1 .desserts_icon {
-  background-color: #99e2d0;
-  margin: -1rem -5rem -1rem 2rem;
-  width: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  right: -100px;
+  height: 100%;
+  background-color: #99e2d0;
+  width: 100px;
   transition-duration: 0.5s;
 }
 .entrees_1:hover .entrees_icon,
@@ -514,7 +539,7 @@ footer {
 .desserts_1:hover .entrees_icon,
 .desserts_1:hover .plats_icon,
 .desserts_1:hover .desserts_icon {
-  margin-left: -0.1rem;
+  right: 0;
 }
 .entrees_1:hover .entrees_price,
 .entrees_1:hover .plats_price,
@@ -525,7 +550,12 @@ footer {
 .desserts_1:hover .entrees_price,
 .desserts_1:hover .plats_price,
 .desserts_1:hover .desserts_price {
-  margin-left: -2.8rem;
+  margin-right: 88px;
+}
+.entrees_1:hover .desserts_bg_header,
+.plats_1:hover .desserts_bg_header,
+.desserts_1:hover .desserts_bg_header {
+  width: 65%;
 }
 .entrees_1 .entrees_bg_icon,
 .entrees_1 .plats_bg_icon,
@@ -739,32 +769,6 @@ body {
     transform: scale(1);
   }
 }
-/*
-@keyframes loader {
-    100% {
-        opacity: 0;
-        z-index: -10;
-    }
-}
-
-@keyframes jump {
-    0% {
-        transform: translateY(0);
-    }
-    25% {
-        transform: translateY(0.5rem);
-    }
-    75% {
-        transform: translateY(-0.5rem);
-    }
-    100% {
-        transform: translateY(0);
-    }
-    // 0% {
-    //   transform: translateY(0);
-    // }
-}
-*/
 @media (min-width: 324px) {
   footer {
     background-color: rgba(0, 0, 0, 0.767);
