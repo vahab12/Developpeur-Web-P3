@@ -236,6 +236,9 @@ th {
   .fonc:hover {
     background-color: #F0F1FC;
   }
+  .fonc:hover i {
+    color: #9356DC;
+  }
   .fonc p {
     font-family: "Roboto", sans-serif, "Shrikhand", cursive;
     font-size: 1.6rem;
@@ -271,7 +274,7 @@ th {
   }
   .degustation i {
     font-size: 1.6rem;
-    color: #9356DC;
+    color: #858585;
   }
 
   .number {
@@ -541,21 +544,16 @@ footer {
 .desserts_1:hover .desserts_icon {
   right: 0;
 }
-.entrees_1:hover .entrees_price,
-.entrees_1:hover .plats_price,
-.entrees_1:hover .desserts_price,
-.plats_1:hover .entrees_price,
-.plats_1:hover .plats_price,
-.plats_1:hover .desserts_price,
-.desserts_1:hover .entrees_price,
-.desserts_1:hover .plats_price,
-.desserts_1:hover .desserts_price {
-  margin-right: 88px;
-}
+.entrees_1:hover .entrees_bg_header,
+.entrees_1:hover .plats_bg_header,
 .entrees_1:hover .desserts_bg_header,
+.plats_1:hover .entrees_bg_header,
+.plats_1:hover .plats_bg_header,
 .plats_1:hover .desserts_bg_header,
+.desserts_1:hover .entrees_bg_header,
+.desserts_1:hover .plats_bg_header,
 .desserts_1:hover .desserts_bg_header {
-  width: 65%;
+  width: 60%;
 }
 .entrees_1 .entrees_bg_icon,
 .entrees_1 .plats_bg_icon,
@@ -616,16 +614,44 @@ footer {
 }
 
 @media (min-width: 667px) {
-  .menu_container .menu {
+  .menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
   }
 
   .btn_header {
     padding-bottom: 2rem;
     position: sticky;
+  }
+
+  .entrees,
+.plats,
+.desserts {
+    width: 48%;
+  }
+}
+@media (min-width: 1024px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .entrees,
+.plats,
+.desserts {
+    width: 32%;
+  }
+
+  .entrees_1,
+.plats_1,
+.desserts_1 {
+    width: 100%;
   }
 }
 /*###############################
@@ -761,12 +787,72 @@ body {
     padding-bottom: 4em;
   }
 }
+/* loading animation */
+.header-home-page,
+.main-home-page,
+.footer-home-page {
+  animation: fade-in 2700ms ease-in;
+}
+
+.loader {
+  position: absolute;
+  top: 200px;
+  z-index: 1001;
+  left: 50%;
+  border: 16px solid #FF79DA;
+  border-top: 16px solid #9356DC;
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  animation: spin 1100ms linear;
+  opacity: 0;
+}
+
 @keyframes entrees {
   0% {
     transform: scale(0);
   }
   100% {
     transform: scale(1);
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.7;
+  }
+  90% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+    opacity: 1;
+  }
+  45% {
+    transform: translateX(-50%) rotate(180deg);
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(-50%) rotate(360deg);
+    opacity: 0.9;
+  }
+  81% {
+    transform: translateX(-50%) rotate(0deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(-50%) rotate(40deg);
+    opacity: 0;
   }
 }
 @media (min-width: 324px) {

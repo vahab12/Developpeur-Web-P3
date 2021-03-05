@@ -120,3 +120,26 @@ body {
         padding-bottom: 4em;
     }
 }
+
+
+/* loading animation */
+
+.header-home-page,
+.main-home-page,
+.footer-home-page {
+    animation: fade-in 2700ms ease-in;
+}
+
+.loader {
+    position: absolute;
+    top: 200px;
+    z-index: 1001;
+    left: 50%;
+    border: 16px solid $secondaire;
+    border-top: 16px solid $primaire;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    animation: spin 1100ms linear;
+    opacity: 0;
+}
