@@ -391,6 +391,7 @@ footer {
   transition: all 1s ease-out;
   font-weight: bold;
   background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-size: 2.4rem;
@@ -755,6 +756,7 @@ footer {
     transition: all 1s ease-out;
     font-weight: bold;
     background: linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
   }
