@@ -122,19 +122,17 @@ th {
     width: auto;
     height: 5rem;
   }
-  .map div {
+  .map .localisation {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 525px;
+    width: 225px;
   }
   .map span .fas {
-    padding-left: 7rem;
     font-size: 1.6rem;
   }
   .map h2 {
-    padding-right: 10rem;
     font-weight: bold;
     font-size: 1.6em;
     font-family: "Roboto", sans-serif, "Shrikhand", cursive;
