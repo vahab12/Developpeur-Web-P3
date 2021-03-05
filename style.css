@@ -110,7 +110,6 @@ th {
   }
   .logo img {
     width: 16rem;
-    box-shadow: 4px black;
   }
 
   .map {
@@ -392,7 +391,6 @@ footer {
   transition: all 1s ease-out;
   font-weight: bold;
   background: linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-size: 2.4rem;
@@ -655,10 +653,6 @@ footer {
 /*###############################
     //////////FOOTER/////////////////
     ################################*/
-body {
-  max-width: auto;
-}
-
 @media (min-width: 667px) {
   .resto {
     display: flex;
@@ -761,7 +755,6 @@ body {
     transition: all 1s ease-out;
     font-weight: bold;
     background: linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
   }
