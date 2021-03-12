@@ -37,6 +37,7 @@
     transition: all 1s ease-out;
     font-weight: bold;
     background: linear-gradient($primaire, $secondaire);
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
