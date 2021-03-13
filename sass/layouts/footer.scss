@@ -1,12 +1,13 @@
 @media (min-width:324px) {
     footer {
         background-color: rgba(0, 0, 0, 0.767);
-        padding: 3rem;
+        padding: 2rem 2rem 0 2rem;
         .logo-footer h2 {
             padding: 0;
             color: white;
             @include menu-title;
             padding-bottom: 1em;
+            font-size: 1.3rem;
         }
         .restaurant,
         .mention,
@@ -18,6 +19,7 @@
         }
         p {
             @include p;
+            color: white;
         }
         a {
             text-decoration: none;

@@ -1,6 +1,6 @@
 @media (min-width:324px) {
     .fonctionement {
-        padding: 3rem;
+        padding: 2rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -10,8 +10,7 @@
             width: 100%;
             h2 {
                 @include titre;
-                padding-top: 1.7rem;
-                padding-bottom: 2.3rem;
+                padding-bottom: 1.8rem;
             }
         }
     }
@@ -25,9 +24,9 @@
         position: relative;
         border: 1px solid transparent;
         box-shadow: 3px 3px 3px 3px rgb(233, 233, 233);
-        border-radius: 2rem;
+        border-radius: 1.5rem;
         background-color: $background-color;
-        height: 6.6rem;
+        height: 4.5rem;
         width: 100%;
         &:hover {
             background-color: #F0F1FC;
@@ -38,33 +37,34 @@
         p {
             @include p;
             font-weight: bold;
-            font-size: 1.5rem;
+            font-size: 1rem;
+            color: black;
         }
          :nth-of-type(3) {
             padding-left: 2em;
         }
     }
     .fonction-content {
-        padding-bottom: 2rem;
+        padding-bottom: 1.3rem;
     }
     .mobile {
-        padding-left: 4em;
+        padding-left: 2.5em;
         i {
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: rgb(133, 133, 133);
         }
     }
     .burger {
-        padding-left: 3em;
+        padding-left: 2.5em;
         i {
-            font-size: 1.7rem;
+            font-size: 1.2rem;
             color: rgb(133, 133, 133);
         }
     }
     .degustation {
-        padding-left: 3em;
+        padding-left: 2.5em;
         i {
-            font-size: 1.6rem;
+            font-size: 1.2rem;
             color: rgb(133, 133, 133);
         }
     }
@@ -76,12 +76,12 @@
         left: -18px;
         background-color: $primaire;
         border-radius: 50%;
-        width: 2.2rem;
-        height: 2.2rem;
+        width: 1.8rem;
+        height: 1.8rem;
         p {
             color: white;
             font-weight: normal;
-            font-size: 1.3rem;
+            font-size: 1rem;
         }
     }
 }
@@ -93,9 +93,6 @@
 }
 
 @media (min-width: 667px) {
-    .fonctionement .fonc {
-        width: 28rem;
-    }
     .fonction-content {
         width: 45%;
     }

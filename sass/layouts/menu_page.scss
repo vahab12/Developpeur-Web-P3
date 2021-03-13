@@ -30,23 +30,23 @@ footer {
     justify-content: center;
     align-items: center;
     i {
-        font-size: 1.8rem;
+        font-size: 1rem;
         font-weight: bold;
         color: black;
         position: absolute;
-        top: 1.8rem;
+        top: 1.6rem;
         left: 2rem
     }
     h1 {
         @include h1;
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         text-align: center;
     }
 }
 
 .bg_slider {
     width: auto;
-    height: 35rem;
+    height: 23rem;
     img {
         width: 100%;
         height: 100%;
@@ -75,17 +75,17 @@ footer {
     align-items: center;
     i {
         padding-top: 0.8rem;
-        font-size: 2.2rem;
+        font-size: 1.5rem;
         &:hover {
             @include btn-heart;
-            font-size: 2.4rem;
+            font-size: 1.7rem;
         }
     }
     h2 {
         padding-top: 0.8rem;
         margin-left: -2rem;
         @include h1;
-        font-size: 2.3rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -99,9 +99,12 @@ footer {
     padding-top: 2rem;
     text-transform: uppercase;
     position: relative;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.2rem;
     font-weight: normal;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    color: rgb(82, 82, 82);
+    font-family: $font-family;
+    font-weight: normal;
     &::after {
         content: "";
         width: 3rem;
@@ -124,8 +127,7 @@ footer {
     box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
     overflow: hidden;
     cursor: pointer;
-    animation: entrees .6s;
-    animation-timing-function: cubic-bezier(.5, 1.58, .34, .82);
+    animation: entrees .7s;
     animation-fill-mode: both;
     transform: scale(0);
     width: 100%;
@@ -139,17 +141,19 @@ footer {
     .plats_subtitle,
     .desserts_subtitle {
         font-family: $font-family;
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-weight: bold;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
+        padding-bottom: 5px;
     }
     .entrees_txt,
     .plats_txt,
     .desserts_txt {
         font-family: $font-family;
-        font-size: 1.1rem;
+        font-size: 0.8rem;
+        color: rgb(82, 82, 82);
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -158,7 +162,7 @@ footer {
     .plats_price,
     .desserts_price {
         font-family: $font-family;
-        font-size: 1.1rem;
+        font-size: .8rem;
         font-weight: bold;
         display: flex;
         justify-content: flex-end;
@@ -231,8 +235,8 @@ footer {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 17rem;
-        height: 4.5rem;
+        width: 12rem;
+        height: 3.5rem;
     }
 }
 

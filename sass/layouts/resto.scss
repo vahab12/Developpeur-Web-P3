@@ -23,12 +23,12 @@
         width: auto;
         height: auto;
         background-color: $background-color;
-        padding: 3rem;
+        padding: 2rem;
         .titre {
             width: 100%;
             h2 {
                 @include titre;
-                padding-top: 2rem;
+                padding-top: 1rem;
                 padding-bottom: 1rem;
             }
         }
@@ -42,7 +42,7 @@
             box-shadow: 2px 2px 5px 2px rgb(209, 209, 209);
         }
         .bg-image {
-            height: 16rem;
+            height: 12rem;
             width: auto;
             img {
                 border-top-left-radius: 1.3rem;
@@ -63,18 +63,18 @@
             right: 1rem;
             top: 2.5rem;
             background-color: $tertiaire;
-            width: 8rem;
-            height: 3rem;
+            width: 6.1rem;
+            height: 2.1rem;
             border-radius: 0.2rem;
         }
         .new p {
             @include p;
-            font-size: 1.4rem;
+            font-size: 1rem;
             font-weight: bold;
             color: rgb(55, 175, 125);
         }
         .txt {
-            height: 6.8rem;
+            height: 5rem;
             position: relative;
         }
         .txt .fa {
@@ -83,10 +83,11 @@
             justify-content: space-between;
         }
         .txt .fa h3 {
-            padding: 1.6rem 0 0 1.5rem;
+            padding: 1.3rem 0 0 1rem;
             @include h3;
         }
         .txt .fa .heart {
+            font-size: .8em;
             padding: 1.6rem 2.3rem 0 0;
             color: rgb(189, 189, 189);
             .far {
@@ -97,8 +98,8 @@
             }
         }
         .txt p {
-            padding-left: 1.5rem;
-            padding-bottom: 2rem;
+            padding-left: 1.1rem;
+            margin-top: -8px;
             @include p;
         }
     }
